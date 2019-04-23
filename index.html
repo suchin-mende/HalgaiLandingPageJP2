@@ -25,6 +25,16 @@
   <link rel="stylesheet" as="font"
     href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700|Material+Icons" />
 
+  <script>
+    // wait for the DOM to be loaded
+    $(document).ready(function () {
+      // bind 'myForm' and provide a simple callback function
+      $('#myForm').ajaxForm(function () {
+        alert("Thank you for your comment!");
+      });
+    });
+  </script>
+
 </head>
 
 <body class="slides horizontal simplifiedMobile animated">
@@ -226,8 +236,8 @@
           <li><a href="#download">会社概要</a></li>
         </ul>
       </div>
-      <div class="right"><a class="button blue gradient" href="#">お問い合わせ</a><a class="button green gradient" href="#"
-          target="_blank">見積もりご依頼</a></div>
+      <div class="right"><a class="button blue gradient" href="#contact">お問い合わせ</a><a class="button green gradient"
+          href="#contact2">見積もりご依頼</a></div>
     </div>
     <div class="sections compact hidden">
       <div class="left"><a href="#" title="Slides Framework">
@@ -643,6 +653,59 @@
             </div>
             <div class="background" style="background-image:url(assets/img/background/img-95.jpg)"></div>
           </section>
+
+          <!-- Slide 8 (#95) -->
+          <section class="slide fade-6 kenBurns" data-name="contact">
+            <div class="content">
+              <div class="container">
+                <div class="wrap">
+
+                  <div class="fix-6-12">
+                    <h1 class="huge ae-1 margin-bottom-2">お問合せ</h1>
+                    <p class="hero ae-2 margin-bottom-3"><span class="opacity-8">下記内容を記入して送信ボタンを押してください。
+                      </span></p>
+
+                    <form action="#" autocomplete="off" class="slides-form margin-bottom-3">
+                      <input type="email" class="ae-3" name="email" placeholder="E-mail address" />
+                      <button type="submit" class="button blue gradient ae-4" name="submit">送 信</button>
+                    </form>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="background" style="background-image:url(assets/img/background/img-95.jpg)"></div>
+          </section>
+
+          <!-- Slide 9 (#95) -->
+          <section class="slide fade-6 kenBurns" data-name="contact2">
+            <div class="content">
+              <div class="container">
+                <div class="wrap">
+
+                  <div class="fix-6-12">
+                    <!-- <h1 class="huge ae-1 margin-bottom-2">見積依頼</h1> -->
+                    <!-- <p class="hero ae-2 margin-bottom-3"><span class="opacity-8">ご依頼内容を下記に記入して送信ボタンを押してください。</span></p> -->
+
+                    <form action="#" autocomplete="off" class="slides-form margin-bottom-3">
+                      <input type="text" class="ae-2" name="commpny" placeholder="会社名" />
+                      <input type="text" class="ae-3" name="name" placeholder="ご担当者氏名" />
+                      <input type="email" class="ae-3" name="email" placeholder="メールアドレス" />
+                      <input type="text" class="ae-3" name="tel" placeholder="電話番号" />
+                      <textarea class="ae-4" name="naiyou" placeholder="ご依頼内容"></textarea>
+                      <div><button type="submit" class="button blue gradient ae-4" name="submit">見積依頼を送信</button></div>
+                    </form>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="background" style="background-image:url(assets/img/background/img-95.jpg)"></div>
+          </section>
+
+
 
           <!-- Panel Bottom #01 -->
           <nav class="panel bottom forceMobileView">
