@@ -1386,10 +1386,6 @@ p.uppercase, .p.uppercase,
   -ms-user-select: text;
   user-select: text;
 }
-.container .wrap img {
-  border-radius: 10px;
-  border: 2px solid #ccc;
-}
 
 .slide .background,
 .popup .background {
@@ -2590,7 +2586,7 @@ html.mobile .showForMobileInline {
   height: 100%;
   color: #fff;
   z-index: 500;
-  background: #333333;
+  background: #333;
   transition: visibility 0s, -webkit-transform 0.5s;
   transition: transform 0.5s, visibility 0s;
   transition: transform 0.5s, visibility 0s, -webkit-transform 0.5s;
