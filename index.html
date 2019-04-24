@@ -218,11 +218,11 @@
       <div class="center">
         <ul class="menu">
           <li><a href="#">ホーム</a></li>
-          <li><a href="#case">オフショア開発</a></li>
-          <li><a href="#features">中国ビジネス</a></li>
+          <li><a href="#Offshore">オフショア開発</a></li>
+          <li><a href="#business">中国ビジネス</a></li>
           <!-- <li><a href="#pricing">サポート窓口</a></li> -->
-          <li><a href="#download">会社概要</a></li>
-          <li><a href="#videos">開発実績</a></li>
+          <li><a href="#company">会社概要</a></li>
+          <li><a href="#Performance">出来ること＆実績</a></li>
         </ul>
       </div>
       <div class="right"><a class="button green gradient" href="#contact">お問合せ & 見積もりご依頼</a></div>
@@ -242,18 +242,18 @@
               <a href="#" class="logo"><img style="width:154px;height:34px" src="assets/img/halgai_logo.gif"></a>
               <ul class="mainMenu margin-top-3">
                 <li><a href="#">ホーム</a></li>
-                <li><a href="#case">オフショア開発</a></li>
-                <li><a href="#features">中国ビジネス</a></li>
+                <li><a href="#Offshore">オフショア開発</a></li>
+                <li><a href="#business">中国ビジネス</a></li>
                 <!-- <li><a href="#pricing">サポート窓口</a></li> -->
-                <li><a href="#download">会社概要</a></li>
-                <li><a href="#videos">開発実績</a></li>
+                <li><a href="#company">会社概要</a></li>
+                <li><a href="#Performance">出来ること＆実績</a></li>
               </ul>
               <ul class="subMenu small opacity-8">
                 <li><a href="#contact">見積り依頼</a></li>
                 <!-- <li><a href="#">FAQ</a></li> -->
-                <li><a href="#case">チームについて</a></li>
-                <li><a href="#features">中国サイバーセキュリティ法とは</a></li>
-                <li><a href="#features">ICP登録について</a></li>
+                <li><a href="#Offshore">チームについて</a></li>
+                <li><a href="#business">中国サイバーセキュリティ法とは</a></li>
+                <li><a href="#business">ICP登録について</a></li>
                 <li><a href="#contact">お問合せ</a></li>
               </ul>
               <ul class="social opacity-8">
@@ -279,14 +279,40 @@
                   <div class="fix-12-12">
                     <ul class="flex fixedSpaces verticalCenter reverse">
                       <li class="col-6-12 left middle">
-                        <h1 class="ae-1 fromLeft">中国国内での<br />システム構築を支援</h1>
+                        <h2 class="ae-1 fromLeft">中国国内での<br />システム構築を支援</h2>
                         <p class="ae-2 fromLeft"><span class="opacity-8">中国サイバーセキュリティ法対策</span></p>
                         <p class="ae-2 fromLeft"><span class="opacity-8">中国国内でWebサイトをホストするためのICP登録をサポート</span></p>
-                        <a class="button green gradient ae-3 fromCenter cropLeft" href="#features">ビジネスサポート事業詳細</a>
+                        <a class="button green gradient ae-3 fromCenter cropLeft" href="#business">ビジネスサポート事業詳細</a>
                       </li>
-                      <li class="col-6-12">
-                        <img class="ae-4" width="605" src="assets/img/iphones-34.png" alt="iPhones Thumbnail"
-                          data-action="zoom" />
+                      <li class="col-6-12 topRightBlock">
+                        <img class="ae-4" width="605" src="assets/img/iphones-34.png" alt="iPhones Thumbnail" />
+                        <!-- <p class="ae-2 fromLeft mainTokei"><span class="opacity-8">16:34</span></p> -->
+                        <p id="Clock1" class="ae-2 fromLeft mainTokei" style="display: inline"></p>
+                        <p id="Clock2" style="display: inline"></p>
+                        <script type="text/javascript">
+                          setInterval('showClock1()', 1000);
+                          function showClock1() {
+                            var DWs = new Array('日', '月', '火', '水', '木', '金', '土');
+                            var Now = new Date();
+                            var MM = set0(Now.getMonth() + 1);
+                            var DD = set0(Now.getDate());
+                            var DW = DWs[Now.getDay()];
+                            var hh = set0(Now.getHours());
+                            var mm = set0(Now.getMinutes());
+                            var ss = set0(Now.getSeconds());
+                            if (MM < 10) { MM = "0" + MM; }
+                            var RTime1 = ' ' + hh + ':' + mm + '<span class="ss">' + ss + ' </span>';
+                            var RTime2 = ' ' + MM + '月' + DD + '日 （' + DW + '曜日） ';
+                            document.getElementById("Clock1").innerHTML = RTime1;
+                            document.getElementById("Clock2").innerHTML = RTime2;
+                          }
+                          function set0(num) {
+                            var ret;
+                            if (num < 10) { ret = "0" + num; }
+                            else { ret = num; }
+                            return ret;
+                          }
+                        </script>
                       </li>
                     </ul>
                   </div>
@@ -298,7 +324,7 @@
           </section>
 
           <!-- Slide 2 (#60) -->
-          <section class="slide fade-6 kenBurns" data-name="videos">
+          <section class="slide fade-6 kenBurns" data-name="Performance">
             <div class="content">
               <div class="container">
                 <div class="wrap">
@@ -415,7 +441,7 @@
 
 
           <!-- Slide 3 (#27) -->
-          <section class="slide fade-6 kenBurns" data-name="features">
+          <section class="slide fade-6 kenBurns" data-name="business">
             <div class="content">
               <div class="container">
                 <div class="wrap">
@@ -518,7 +544,7 @@
           </section>
 
           <!-- Slide 5 (#91) -->
-          <section class="slide fade-6 kenBurns" data-name="case">
+          <section class="slide fade-6 kenBurns" data-name="Offshore">
             <div class="content">
               <div class="container">
                 <div class="wrap">
@@ -624,7 +650,7 @@
           </section> -->
 
           <!-- Slide 7 (#95) -->
-          <section class="slide fade-6 kenBurns" data-name="download">
+          <section class="slide fade-6 kenBurns" data-name="company">
             <div class="content">
               <div class="container">
                 <div class="wrap">
