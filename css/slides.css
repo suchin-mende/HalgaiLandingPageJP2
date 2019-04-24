@@ -1,14 +1,14 @@
 @charset "UTF-8";
-/*  
-                                           
-   _____ _       _              _____  _____ _____ 
+/*
+
+   _____ _       _              _____  _____ _____
   / ___/| (•)   | |           / ____// ____/ ____/  v 4.0.5
- | (___ | |_  __| | ___ ____ | |    | (___| (___  
-  \___ \| | |/ _` |/ _ / __/ | |     \___ \ ___ \ 
+ | (___ | |_  __| | ___ ____ | |    | (___| (___
+  \___ \| | |/ _` |/ _ / __/ | |     \___ \ ___ \
   ____) | | | (_| |  __\__ \ | |____ ____) |___) |
- /_____/|_|_|\__,_|\___/___/  \_____/_____/_____/                               
-                                            
-                                            
+ /_____/|_|_|\__,_|\___/___/  \_____/_____/_____/
+
+
 This file contains styles required for the proper functionality and display
 of your Slides Project.
 
@@ -60,14 +60,14 @@ html {
 }
 
 /***
- *      __  __              
- *     |  \/  |     ( )      
- *     | \  / | __ _ _ _ __  
- *     | |\/| |/ _` | | '_ \ 
+ *      __  __
+ *     |  \/  |     ( )
+ *     | \  / | __ _ _ _ __
+ *     | |\/| |/ _` | | '_ \
  *     | |  | | (_| | | | | |
  *     |_|  |_|\__,_|_|_| |_|
- *                           
- *                           
+ *
+ *
  */
 html {
   margin: 0;
@@ -258,6 +258,7 @@ blockquote.hero {
   font-size: 28px;
   line-height: 1.5;
   margin-bottom: 25px;
+  clear: both;
 }
 p.large,
 .p.large,
@@ -1121,7 +1122,7 @@ p.uppercase, .p.uppercase,
   .slides-form input[type="number"],
   .slides-form textarea,
   .slides-form select {
-    max-width: 300px;
+    max-width: 500px;
   }
 }
 .slides-form input[type="text"]::-webkit-input-placeholder,
@@ -1255,14 +1256,14 @@ p.uppercase, .p.uppercase,
 }
 
 /***
- *       _____ _       _          
- *      / ___/| ( )   | |         
+ *       _____ _       _
+ *      / ___/| ( )   | |
  *     | (___ | |_  __| | ________
  *      \___ \| | |/ _` |/ , / __/
  *      ____) | | | (_| |  __\__ \
  *     /_____/|_|_|\__,_|\___/___/
- *                                
- *                                
+ *
+ *
  */
 .slide {
   position: fixed;
@@ -1486,6 +1487,48 @@ p.uppercase, .p.uppercase,
 .toCenter {
   margin-left: auto !important;
   margin-right: auto !important;
+}
+
+.commpany-block {
+  background-color: rgba(0,0,0,0.2);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.toComLeft {
+  width: 25%;
+  text-align: right;
+  float: left;
+  font-size: 25px;
+}
+
+.toComRight {
+  width: 95%;
+  font-size: 21px;
+  text-align: left;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  h2.huge,
+  .h2.huge {
+    font-size: 25px;
+  }
+
+  .toComLeft {
+    width: 50%;
+    text-align: left;
+    float: left;
+    font-size: 18px;
+  }
+
+  .toComRight {
+    float: right;
+    width: 100%;
+    font-size: 17px;
+    text-align: left;
+    padding-left: 20px;
+  }
 }
 
 .popupTrigger,
@@ -1781,14 +1824,14 @@ html.mobile .showForMobileInline {
 }
 
 /***
- *      _____                 _     
- *     |  __ \               | |    
- *     | |__) __ _ _ __   ___| |____ 
+ *      _____                 _
+ *     |  __ \               | |
+ *     | |__) __ _ _ __   ___| |____
  *     |  ___/ _` | '_ \ / _ | / __/
  *     | |  | (_| | | | |  __| \__ \
  *     |_|   \__,_|_| |_|\___|_/___/
- *                                  
- *                                  
+ *
+ *
  */
 .panel {
   position: fixed;
@@ -2057,14 +2100,14 @@ html.mobile .showForMobileInline {
 }
 
 /***
- *       _____       _      
- *      / ___/( )   | |     
- *     | (___  _  __| | ___ 
+ *       _____       _
+ *      / ___/( )   | |
+ *     | (___  _  __| | ___
  *      \___ \| |/ _` |/ _ \
  *      ____) | | (_| |  __/
  *     /_____/|_|\__,_|\___/
- *                          
- *                          
+ *
+ *
  */
 .side {
   position: fixed;
@@ -2397,14 +2440,14 @@ html.mobile .showForMobileInline {
 
 /* End of Side */
 /***
- *       _____ _                    
- *      / ___/| |                   
- *     | (___ | |__   __ _ _ __ ___ 
+ *       _____ _
+ *      / ___/| |
+ *     | (___ | |__   __ _ _ __ ___
  *      \___ \| '_ \ / _` | '__/ _ \
  *      ____) | | | | (_| | | |  __/
  *     /_____/|_| |_|\__,_|_|  \___/
- *                                  
- *                                  
+ *
+ *
  */
 .dropdown {
   position: fixed;
@@ -2569,14 +2612,14 @@ html.mobile .showForMobileInline {
 }
 
 /***
- *       _____       _      _                
- *      / ___/( )   | |    | |               
+ *       _____       _      _
+ *      / ___/( )   | |    | |
  *     | (___  _  __| | ___| |__   __ _ _ ___
  *      \___ \| |/ _` |/ _ | '_ \ / _` | '__/
- *      ____) | | (_| |  __| |_) | (_| | |   
- *     /_____/|_|\__,_|\___|_.__/ \__,_|_|   
- *                                           
- *                                           
+ *      ____) | | (_| |  __| |_) | (_| | |
+ *     /_____/|_|\__,_|\___|_.__/ \__,_|_|
+ *
+ *
  */
 .sidebar {
   position: fixed;
@@ -2587,7 +2630,7 @@ html.mobile .showForMobileInline {
   height: 100%;
   color: #fff;
   z-index: 500;
-  background: #0E0E0E;
+  background: #333;
   transition: visibility 0s, -webkit-transform 0.5s;
   transition: transform 0.5s, visibility 0s;
   transition: transform 0.5s, visibility 0s, -webkit-transform 0.5s;
@@ -2771,14 +2814,14 @@ html.mobile .showForMobileInline {
 }
 
 /***
- *      _____                        
- *     |  __ \                       
- *     | |__) __  _ __  _   _ _ __  
- *     |  ___/ _ \| '_ \| | | | '_ \ 
+ *      _____
+ *     |  __ \
+ *     | |__) __  _ __  _   _ _ __
+ *     |  ___/ _ \| '_ \| | | | '_ \
  *     | |  | (_) | |_) | |_| | |_) |
- *     |_|   \___/| .__/ \__,_| .__/ 
- *                | |         | |    
- *                |_|         |_|    
+ *     |_|   \___/| .__/ \__,_| .__/
+ *                | |         | |
+ *                |_|         |_|
  */
 /* POPUP */
 .popup {
@@ -2913,14 +2956,14 @@ html.mobile .showForMobileInline {
 }
 
 /***
- *      ______                       _____                            
- *     |___  /                      |_   _|                           
- *        / / ___   ___  _ __ ___     | |  _ __ ___   __ _  __ _  ___ 
+ *      ______                       _____
+ *     |___  /                      |_   _|
+ *        / / ___   ___  _ __ ___     | |  _ __ ___   __ _  __ _  ___
  *       / / / _ \ / _ \| '_ ` _ \    | | | '_ ` _ \ / _` |/ _` |/ _ \
  *      / /_| (_) | (_) | | | | | |  _| |_| | | | | | (_| | (_| |  __/
  *     /_____\___/ \___/|_| |_| |_| |_____|_| |_| |_|\__,_|\__, |\___/
- *                                                          __/ |     
- *                                                         |___/      
+ *                                                          __/ |
+ *                                                         |___/
  */
 .zoom-img,
 .zoom-img-wrap {
@@ -2969,14 +3012,14 @@ html.mobile .showForMobileInline {
 }
 
 /***
- *       _____ _ _     _           
- *      / ___/| (_)   | |          
- *     | (___ | |_  __| | ___ _ __ 
+ *       _____ _ _     _
+ *      / ___/| (_)   | |
+ *     | (___ | |_  __| | ___ _ __
  *      \___ \| | |/ _` |/ _ \ '__/
- *      ____) | | | (_| |  __/ |   
- *     /_____/|_|_|\__,_|\___/_|   
- *                                 
- *                                 
+ *      ____) | | | (_| |  __/ |
+ *     /_____/|_|_|\__,_|\___/_|
+ *
+ *
  */
 .slider {
   position: relative;
@@ -3054,7 +3097,7 @@ html.mobile .showForMobileInline {
     .           ,                              o
      *                 ¤     ~            ..
         ______  __  __          _       *
-       |  ___/ / _// _|   *    | |        
+       |  ___/ / _// _|   *    | |
        | |___ | |_| |_ ___  ___| |_ ____
     .  |  __/ |  _|  _/ _ \/ __| __/ __/
    ¯   | |____| | | ||  __| (__| |_\__ \    ¨
@@ -3362,14 +3405,14 @@ html.mobile .showForMobileInline {
 }
 
 /***
- *                                       _           _   ______ _                           _       
- *         /\         ( )               | |         | | |  ___/| |                         | |      
- *        /  \   _ __  _ _ __ ___   __ _| |_ ___  __| | | |___ | | ___ _ __ ___   ___ _ __ | |_ ___ 
+ *                                       _           _   ______ _                           _
+ *         /\         ( )               | |         | | |  ___/| |                         | |
+ *        /  \   _ __  _ _ __ ___   __ _| |_ ___  __| | | |___ | | ___ _ __ ___   ___ _ __ | |_ ___
  *       / /\ \ | '_ \| | '_ ` _ \ / _` | __/ _ \/ _` | |  __/ | |/ _ \ '_ ` _ \ / _ \ '_ \| __/ __/
  *      / ____ \| | | | | | | | | | (_| | ||  __/ (_| | | |____| |  __/ | | | | |  __/ | | | |_\__ \
  *     /_/    \_\_| |_|_|_| |_| |_|\__,_|\__\___/\__,_| |_____/|_|\___/_| |_| |_|\___/_| |_|\__|___/
- *                                                                                                  
- *                                                                                                  
+ *
+ *
  */
 .animated [class*="ae-"] {
   -webkit-backface-visibility: hidden;
@@ -4367,14 +4410,14 @@ html.mobile .showForMobileInline {
 }
 
 /***
- *      ____             _                                   _    ______  __  __          _       
- *     |  _ \           | |                                 | |  |  ____|/ _|/ _|        | |      
- *     | |_) | __ _  ___| | ____ _ _ __ ___  _   _ _ __   __| |  | |__  | |_| |_ ___  ___| |_ ___ 
+ *      ____             _                                   _    ______  __  __          _
+ *     |  _ \           | |                                 | |  |  ____|/ _|/ _|        | |
+ *     | |_) | __ _  ___| | ____ _ _ __ ___  _   _ _ __   __| |  | |__  | |_| |_ ___  ___| |_ ___
  *     |  _ < / _` |/ __| |/ / _` | '__/ _ \| | | | '_ \ / _` |  |  __| |  _|  _/ _ \/ __| __/ __|
  *     | |_) | (_| | (__|   < (_| | | | (_) | |_| | | | | (_| |  | |____| | | ||  __/ (__| |_\__ \
  *     |____/ \__,_|\___|_|\_\__, |_|  \___/ \__,_|_| |_|\__,_|  |______|_| |_| \___|\___|\__|___/
- *                            __/ |                                                               
- *                           |___/                                                                
+ *                            __/ |
+ *                           |___/
  */
 /* KEN BURNS */
 .slides.animated .kenBurns .background,
@@ -5255,7 +5298,7 @@ body {
 }
 
 .green {
-  background: #4CAF50 !important;
+  background: #398865 !important;
   color: #fff !important;
 }
 .green svg {
@@ -6359,9 +6402,9 @@ body {
   }
 }
 /*
-*       _____          _             
-*      |  __ \( )     | |            
-*      | |  | |_  __ _| | ___   __ _ 
+*       _____          _
+*      |  __ \( )     | |
+*      | |  | |_  __ _| | ___   __ _
 *      | |  | | |/ _` | |/ _ \ / _` |
 *      | |__| | | (_| | | (_) | (_| |
 *      |_____/|_|\__,_|_|\___/ \__, |
@@ -6609,7 +6652,7 @@ html:not(.page-loaded) .dialog {
   left: 0;
 }
 
-/* 
+/*
 .dialogContainer > .dialog:nth-child(1){ -webkit-transition-delay: 0.1s; transition-delay: 0.1s; }
 .dialogContainer > .dialog:nth-child(2){ -webkit-transition-delay: 0.2s; transition-delay: 0.2s; }
 .dialogContainer > .dialog:nth-child(3){ -webkit-transition-delay: 0.3s; transition-delay: 0.3s; }
