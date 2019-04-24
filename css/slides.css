@@ -99,6 +99,7 @@ img {
   max-width: 100%;
   display: inline-block;
 }
+
 img.round {
   border-radius: 999px;
 }
@@ -149,7 +150,7 @@ a:hover {
 }
 
 h1, .h1 {
-  font-size: 42px;
+  font-size: 25px;
   line-height: 1.285;
   font-weight: 300;
   margin-bottom: 20px;
@@ -176,7 +177,7 @@ h1.micro, .h1.micro {
 
 h2,
 .h2 {
-  font-size: 35px;
+  font-size: 36px;
   line-height: 1.17;
   margin-bottom: 15px;
   font-weight: 400;
@@ -195,7 +196,7 @@ h2.micro,
 }
 h2.huge,
 .h2.huge {
-  font-size: 42px;
+  font-size: 36px;
 }
 
 h3,
@@ -246,10 +247,10 @@ h6,
 p,
 .p,
 blockquote {
-  font-size: 22px;
+  font-size: 16px;
   line-height: 1.6363636364;
   margin-bottom: 30px;
-  font-weight: 300;
+  /* font-weight: 300; */
 }
 p.hero,
 .p.hero,
@@ -321,7 +322,7 @@ small .small {
   .h1.huge,
   h1.big,
   .h1.big {
-    font-size: 40px;
+    font-size: 32px;
     margin-bottom: 20px;
   }
 
