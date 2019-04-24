@@ -1489,10 +1489,11 @@ p.uppercase, .p.uppercase,
   margin-right: auto !important;
 }
 
-.commpany-block {
+.company-block {
   background-color: rgba(0,0,0,0.2);
   padding: 20px;
   border-radius: 15px;
+  margin: 5px;
 }
 
 .toComLeft {
