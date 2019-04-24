@@ -257,6 +257,7 @@ blockquote.hero {
   font-size: 28px;
   line-height: 1.5;
   margin-bottom: 25px;
+  clear: both;
 }
 p.large,
 .p.large,
@@ -1485,6 +1486,48 @@ p.uppercase, .p.uppercase,
 .toCenter {
   margin-left: auto !important;
   margin-right: auto !important;
+}
+
+.commpany-block {
+  background-color: rgba(0,0,0,0.2);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.toComLeft {
+  width: 25%;
+  text-align: right;
+  float: left;
+  font-size: 25px;
+}
+
+.toComRight {
+  width: 95%;
+  font-size: 21px;
+  text-align: left;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  h2.huge,
+  .h2.huge {
+    font-size: 25px;
+  }
+
+  .toComLeft {
+    width: 50%;
+    text-align: left;
+    float: left;
+    font-size: 18px;
+  }
+
+  .toComRight {
+    float: right;
+    width: 100%;
+    font-size: 17px;
+    text-align: left;
+    padding-left: 20px;
+  }
 }
 
 .popupTrigger,
