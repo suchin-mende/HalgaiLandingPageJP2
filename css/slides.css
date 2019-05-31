@@ -5997,6 +5997,12 @@ body {
 .grid > .col-4-12 {
   max-width: 33.33333%;
 }
+.grid > .col-4-14 {
+  max-width: 50%;
+}
+.grid > .col-4-13 {
+  max-width: 33.33333%;
+}
 .grid > .col-5-12 {
   max-width: 41.66667%;
 }
@@ -6248,6 +6254,9 @@ body {
 }
 .flex > .col-4-12 {
   width: 33.33333%;
+}
+.flex > .col-4-12 {
+  width: 50%;
 }
 .flex > .col-5-12 {
   width: 41.66667%;
