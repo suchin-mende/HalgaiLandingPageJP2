@@ -196,7 +196,7 @@ element.style {
 }
 
 .banner_title {
-	padding-top: 150px;
+	padding-top: 260px;
 }
 
 .element.style {
@@ -6260,6 +6260,7 @@ body {
 }
 .grid > .col-4-14 {
   max-width: 50%;
+  min-height: 800px;
 }
 .grid > .col-5-12 {
   max-width: 41.66667%;

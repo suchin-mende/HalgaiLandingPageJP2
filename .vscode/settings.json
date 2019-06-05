@@ -1,0 +1,12 @@
+{
+    "debug.node.autoAttach": "off",
+    "workbench.commandPalette.preserveInput": true,
+    "workbench.list.horizontalScrolling": true,
+    "workbench.view.alwaysShowHeaderActions": true,
+    "files.exclude": {
+        "**/.git": false,
+        "**/.hg": false,
+        "**/.svn": false,
+        "**/CVS": false
+    }
+}
